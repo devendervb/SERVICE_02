@@ -15,3 +15,18 @@ Content-Type: application/json
   "ID": 7,
   "name": "Customer 7"
 }
+
+##### Put
+PUT http://localhost:4004/odata/v4/my/Customer(7) HTTP/1.1
+Content-Type: application/json
+
+{
+  "ID": 7,
+  "name": "Customer 72"
+}
+
+###### Read Entry
+GET http://localhost:4004/odata/v4/my/Customer(7) HTTP/1.1
+
+####### Delete Entry
+DELETE http://localhost:4004/odata/v4/my/Customer(7) HTTP/1.1 
